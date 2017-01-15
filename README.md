@@ -3,7 +3,7 @@
 注解框架使用了butterknife。  
 在开发的时候，butterknife搭配ButterKnife Zelenzny插件来使用，能加快开发的速度和缩减代码量。 
 ##总结了哪些网络请求?  
-HttpUrlConnection,HttpClient,android-async-http,Volley,OKHttp
+HttpUrlConnection,HttpClient,android-async-http,Volley,okHttp,Retrofit
 ####HttpUrlConnection
 Android2.3以前有Bug，Android2.3以后推荐使用。API简单，体积小。有缓存机制，节省流量，提升速度，省电。
 ####HttpClient
@@ -14,7 +14,7 @@ Android2.3以前Bug相对较少，所以2.3前推荐使用。
 PS:Volley还可以设置为使用OKHttp为网络请求层。
 ####android-async-http   
 是对HttpClient的封装，底层为HttpClient(已经不推荐适用)。网络请求和回调都是在子线程执行。
-####OKHttp  
+####okHttp 
 需要在Android2.3以后使用。从Android4.4开始HttpURLConnection的底层实现采用的是okHttp。
-
-
+####Retrofit     
+Retrofit的底层为okHttp
