@@ -14,7 +14,7 @@ Android2.3以前Bug相对较少，所以2.3前推荐使用。
 PS:Volley还可以设置为使用OKHttp为网络请求层。
 ####android-async-http   
 是对HttpClient的封装，底层为HttpClient(已经不推荐适用)。网络请求和回调都是在子线程执行。
-####OKHttp    
-重用socket     
-支持Http2.0
-支持Https   
+####OKHttp  
+需要在Android2.3以后使用。从Android4.4开始HttpURLConnection的底层实现采用的是okHttp。
+
+
