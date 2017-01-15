@@ -19,6 +19,11 @@ android {
     }
 }
 
+//gradle2.4加快编译速度
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.4'
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -27,4 +32,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.0.1'
     compile 'com.android.support:design:25.0.1'
     testCompile 'junit:junit:4.12'
+
+
 }
